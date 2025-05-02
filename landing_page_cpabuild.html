@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحميل كتاب الرجال من المريخ والنساء من الزهرة</title>
+    <style>
+        body {
+            font-family: 'Tahoma', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+            padding: 30px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #c0392b;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .locker {
+            margin-top: 30px;
+            display: none;
+        }
+        #downloadBtn {
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #downloadBtn:hover {
+            background-color: #27ae60;
+        }
+        #downloadLink {
+            display: none;
+            margin-top: 20px;
+            background-color: #2980b9;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        #downloadLink:hover {
+            background-color: #1f618d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>تحميل كتاب الرجال من المريخ والنساء من الزهرة</h1>
+        <p>
+            كتاب مذهل يساعدك على فهم الجنس الآخر بشكل أعمق وتحسين علاقاتك الشخصية والعاطفية.
+        </p>
+        <p>
+            للحصول على الكتاب، يُرجى إتمام خطوة بسيطة لتفعيل التحميل:
+        </p>
+
+        <button id="downloadBtn">إضغط للحصول على الكتاب</button>
+
+        <div class="locker" id="lockerDiv">
+            <p>يرجى إتمام العرض لتحصل على الكتاب.</p>
+            <script type="text/javascript">
+                var ptYEK_Oid_SWppgc={"it":4417487,"key":"d40e5"};
+            </script>
+            <script src="https://d2v7l2267atlz5.cloudfront.net/809c572.js"></script>
+        </div>
+
+        <a id="downloadLink" href="رابط_التحميل_هنا" target="_blank">تحميل الكتاب الآن</a>
+    </div>
+
+    <script>
+        document.getElementById("downloadBtn").addEventListener("click", function() {
+            document.getElementById("lockerDiv").style.display = "block";
+            document.getElementById("downloadBtn").style.display = "none";
+        });
+
+        window.onload = function() {
+            var locker = document.querySelector('.locker');
+            var downloadLink = document.getElementById('downloadLink');
+            downloadLink.style.display = "none";
+
+            if (locker) {
+                locker.addEventListener('unlock', function() {
+                    downloadLink.style.display = "inline-block";
+                });
+            }
+        };
+    </script>
+</body>
+</html>
